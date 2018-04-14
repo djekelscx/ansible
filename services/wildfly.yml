@@ -1,0 +1,6 @@
+- name: Wildfly Application Server
+  hosts: "{{ hosts }}"
+  become: True
+  gather_facts: True
+  roles:
+     -inkatze.wildfly

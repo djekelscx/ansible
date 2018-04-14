@@ -1,0 +1,7 @@
+- name: "Configure Postgresql on instance(s)"
+  hosts: "{{ hosts }}"
+  become: True
+  gather_facts: True
+  roles:
+    - neel.rundeck
+    

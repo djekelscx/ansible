@@ -1,0 +1,7 @@
+- name: Install Zabbix
+  hosts: "{{ hosts }}"
+  become: yes
+  roles:
+    - { role: geerlingguy.apache }
+    - { role: dj-wasabi.zabbix-server, database_type: mysql, database_type_long: mysql }
+    - { role: zabbix_web, zabbix_url: zabbix.dj-wasabi.nl, database_type: mysql, database_type_long: mysql, server_dbport: 3306 }

@@ -7,3 +7,8 @@
 # Install roles from ansible galaxy
 #
 - src: geerlingguy.postgresql
+- src: Graylog2.graylog-ansible-role
+- src: neel.rundeck
+- src: dj-wasabi.zabbix-server
+- src: dj-wasabi.zabbix-web
+- src: inkatze.wildfly

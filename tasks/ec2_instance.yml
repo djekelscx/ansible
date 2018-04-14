@@ -9,7 +9,7 @@
     aws_secret_key:     "{{ aws_secret_key }}"    
     region:             "{{ aws_region }}"    
     key_name:           "{{ aws_keypair_name }}"
-    image:              "{{ aws_centos_ami }}"
+    image:              "{{ aws_image }}"
     group_id:           "{{ aws_vm_securitygroup_id }}"
     instance_type:      "{{ aws_default_size }}"
     vpc_subnet_id:      "{{ public_subnet_1_id }}"

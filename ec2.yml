@@ -18,11 +18,7 @@
       vars:
         - name: "{{ aws_vm_prefix }}-postgresql-01"
         - service: postgresql
-
-    # - import_tasks: tasks/service_postgresql.yml
-    #   vars:
-    #     - hosts: "{{ ec2instance.instance_ids }}"
     
-    # - import_tasks: tasks/ec2_instance_terminate.yml
-    #   vars:
-    #     - instance_ids: "{{ ec2instance.instance_ids }}"
+    - import_tasks: tasks/ec2_instance_terminate.yml
+      vars:
+        - instance_ids: "{{ ec2instance.instance_ids }}"

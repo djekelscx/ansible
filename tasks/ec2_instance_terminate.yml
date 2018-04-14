@@ -1,6 +1,6 @@
 - name: "Terminate instance(s) that were previously launched ({{ instance_ids }})"
   tags:
-    - vmdev
+    - terminate
   ec2:
     region: "{{ aws_region }}"    
     state: 'absent'

@@ -24,6 +24,12 @@ Create an aws keypair using your ~/.ssh/id_rsa.pub public key
 make keypair/create
 ```
 
+Terminiating an instance by id
+
+```bash
+ansible-playbook ec2.yml --tags terminate -e instance_ids=i-061990aec288b0b0d
+```
+
 # References
 
 * https://docs.ansible.com/ansible/devel/modules/ec2_module.html
